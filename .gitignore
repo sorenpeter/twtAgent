@@ -1,0 +1,5 @@
+# Added files required in local tests,
+# but not required to be in the Git repo
+twtAgent.log
+twtAgent.csv
+twtxt.txt
