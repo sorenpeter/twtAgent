@@ -7,7 +7,8 @@ Based on: https://gist.mills.io/prologic/223ef70ac7334b48acafcc095a7a9262 (gener
 To get twtAgent.php to work you need to add this to your .htaccess file:
 
 RewriteEngine on
-Redirect /twtxt.txt /twtAgent.php
+Redirect /twtAgent.php /twtxt.txt 
+RewriteRule /twtxt.txt /twtAgent.php
 
 ---
 
@@ -30,6 +31,7 @@ Redirect /twtxt.txt /twtAgent.php
     - twtUserAgents
     - twtFollowers    
 */
+
 
 // Path to the text file to be served
 $twtFile = 'twtxt.txt';
